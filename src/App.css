@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.landingPageContainer {
+  background-image: url("./assets/images/landing-page/landing.png");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.landingPageFooter {
+  padding: 16px 8px;
+  width: 100%;
+  height: 221px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #646161b0;
+}
+.landingPageFooter > h2 {
+  font-family: "Poller One", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  text-align: center;
+}
+.landingPageFooter > p {
+  width: 200px;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  text-align: center;
+}
+.landingPageFooter > button {
+  width: 343px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fdd637;
+  color: #010101;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  font-family: "Lora", sans-serif;
+}
+
+/* home page */
+.homePageContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #494947;
+  padding: 25px 15px;
+}
+/* header */
+.headerDivContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.profileIcon {
+  width: 64px;
+  height: 64px;
+}
+.welcomeMessage {
+  font-family: "Poller One", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+.handshakeIcon,
+.notificationIcon {
+  width: 32px;
+  height: 32px;
+}
+.handshakeIcon {
+  margin-right: 20px;
+}
+
+/* section 1 */
+.homePageSection1Container {
+  margin-bottom: 40px;
+}
+.homePageSection1Container > h2 {
+  font-family: "Poller One", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.homePageSection1Container > div {
+  display: flex;
+  gap: 25px;
+  overflow-x: scroll;
+}
+.homePageSection1ContainerFilm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.homePageSection1ContainerFilm > img {
+  width: 123px;
+  height: 172px;
+  border-radius: 8px;
+}
+.homePageSection1ContainerFilm > h3 {
+  text-align: center;
+  font-family: "Inria Serif", sans-serif;
+  font-weight: 100;
+  font-size: 11px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+/* section 2 */
+.homePageSection2Container > h2 {
+  font-family: "Poller One", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.homePageSection2FilmsContainer {
+  display: flex;
+  gap: 20px;
+}
+.homePageSection2FilmsContainer > div {
+  margin-bottom: 10px;
+}
+.homePageSection2FilmSecondContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 8px;
+}
+.homePageSection2FilmsImage {
+  width: 66px;
+  height: 97px;
+  border-radius: 8px;
+}
+.homePageSection2FilmName {
+  font-family: "Poller One", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+.homePageSection2FilmRateContainer {
+  display: flex;
+}
+.homePageSection2FilmRateContainer > h4,
+.homePageSection2FilmClockContainer > h4 {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+.homePageSection2FilmsStarIcon {
+  width: 36px;
+  height: 20px;
+}
+.homePageSection2FilmClockContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.homePageSection2FilmClockContainer > img {
+  width: 24px;
+  height: 24px;
+}
+.homePageSection2FilmWatchDiv > img {
+    width: 30px;
+    height: 30px;
+}
+
+/* footer */
+
+.homePageFooterContainer {
+    display: flex;
+    position: fixed;
+    top: 88%;
+    left: 0%;
+    width: 100%;
+    height: 100px;
+    background-color: #80807FB2;
+}
