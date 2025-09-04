@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import popularFilms from "../../data/popular films";
 import starIcon from "../../assets/images/home-page/star-icon.png";
 import watchIcon from "../../assets/images/home-page/watch-icon.png";
 import clockIcon from "../../assets/images/home-page/clock-icon.png";
 
+
 export default function Section2() {
+  const navigate = useNavigate()
   return (
     <>
       <section className="homePageSection2Container">
@@ -18,6 +21,7 @@ export default function Section2() {
                     src={film.image}
                     alt={film.name + " image"}
                     className="homePageSection2FilmsImage"
+                    onClick={() => navigate(`/movie/${film.id}/details`)}
                   />
                 </div>
                 <div className="homePageSection2FilmSecondContainer">

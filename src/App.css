@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+button {
+  background-color: none;
+}
 .landingPageContainer {
   background-image: url("./assets/images/landing-page/landing.png");
   width: 100vw;
@@ -46,7 +49,12 @@
   color: #ffffff;
   text-align: center;
 }
-.landingPageFooter > button {
+.mainButtonContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-self: center;
+}
+.mainButton {
   width: 343px;
   height: 48px;
   border-radius: 8px;
@@ -58,6 +66,7 @@
   line-height: 20px;
   letter-spacing: -0.5px;
   font-family: "Lora", sans-serif;
+  cursor: pointer;
 }
 
 /* home page */
@@ -197,18 +206,156 @@
   height: 24px;
 }
 .homePageSection2FilmWatchDiv > img {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 /* footer */
 
 .homePageFooterContainer {
-    display: flex;
-    position: fixed;
-    top: 88%;
-    left: 0%;
-    width: 100%;
-    height: 100px;
-    background-color: #80807FB2;
+  display: flex;
+  position: fixed;
+  top: 89%;
+  left: 0%;
+  width: 100%;
+  height: 100px;
+  background-color: #80807fb2;
+}
+.homePageFooterIconsContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.homePageFooterIconsContainer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.homePageFooterIconsContainer > div > img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.homePageFooterIconsContainer > div > h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+/* reserve pages styles */
+.reservePagesContainer {
+  width: 100vw;
+  height: 100vh;
+  padding: 25px 10px;
+  background-color: #494947;
+}
+.reservePagesImage {
+  width: 100%;
+  min-height: 349px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* movie details page */
+.movieDetailsPageSec1Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.movieDetailsPageSec1Container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+.movieDetailsPageSec1Container > h2 {
+  font-family: "Poller One", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+.movieDetailsPageSec1Container > h3 {
+  font-family: "Inria Serif";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+.movieDetailsPageSec2Container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.movieDetailsPageSec2Container > button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 18px;
+  border: 1px solid #fdd637;
+  border-radius: 10px;
+  background-color: #2d2d2c;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #ffffff;
+}
+.starRateCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.starRateCont > img {
+  width: 48px;
+  height: 27px;
+}
+.starRateCont > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.starRateCont > div > h4,
+.starRateCont > div > h3 {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.starRateCont > div > h3 {
+  font-size: 15px;
+  color: #fdd637;
+}
+/* */
+.detailsMovieDescriptionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detailsMovieDescriptionContainer > p {
+  margin-top: 15px;
+  text-align: center;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffffad;
 }
