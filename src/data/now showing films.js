@@ -6,6 +6,7 @@ const nowShowingfilms = [
   {
     name: "10 things l hate about you",
     image: tenThingsIHateAboutYou,
+    trailer: "https://www.youtube.com/watch?v=uE7qjQlfoRs",
     rate: "6/10",
     time: "2h 2m",
     genre: "Romantic/Comedy",
@@ -16,6 +17,7 @@ const nowShowingfilms = [
   {
     name: "How to lose a guy in 10 days",
     image: howToLoseAGuyIn10Days,
+    trailer: "https://www.youtube.com/watch?v=2ZMGk_Ml1fc",
     rate: "7/10",
     time: "1h 23m",
     genre: "Romantic/Comedy",
@@ -26,6 +28,7 @@ const nowShowingfilms = [
   {
     name: "Up",
     image: up,
+    trailer: "https://www.youtube.com/watch?v=HWEW_qTLSEE",
     rate: "10/10",
     time: "2h",
     genre: "Buddy/Commedy",

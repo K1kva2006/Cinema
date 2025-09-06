@@ -50,7 +50,7 @@ button {
   text-align: center;
 }
 .mainButtonContainer {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   justify-self: center;
 }
@@ -301,7 +301,8 @@ button {
   display: flex;
   justify-content: space-evenly;
 }
-.movieDetailsPageSec2Container > button {
+.movieDetailsPageSec2Container > a > button {
+  margin-top: 7.8px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -359,3 +360,213 @@ button {
   letter-spacing: -0.5px;
   color: #ffffffad;
 }
+
+/* reservation page */
+.reservePagesContainer > h2 {
+  font-family: "Poller One", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.reservePagesImageContainer > img {
+  position: relative;
+}
+.reservePagesImageContainer > div {
+  position: absolute;
+  top: 44%;
+  width: 60%;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ccca3cab;
+}
+.reservePagesImageContainer > div > h2 {
+  font-family: "Poller One", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+.dateContainer {
+  margin-top: 50px;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+  padding: 10px 0;
+  margin-bottom: 80px;
+}
+.dateContainer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #80807f;
+  transition: all 0.2s;
+}
+.dateContainer > div > h3 {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+.dateContainer > div > h4 {
+  font-family: "Lora", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+.dateContainer > div.active {
+  transform: translateY(-10px);
+  background-color: #ffd700;
+}
+.dateContainer > div.active h3,
+.dateContainer > div.active h4 {
+  color: #000000;
+}
+
+/* buy ticket page */
+.buyTicketPageTimesContainer {
+  margin: 0 5%;
+  gap: 10px;
+  position: relative;
+  height: 170px;
+}
+.buyTicketPageTimesContainer > h4 {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  font-weight: bold;
+  cursor: pointer;
+}
+.buyTicketPageTimesContainer > h4:nth-child(1) {
+  top: 100px;
+  left: 20px;
+  opacity: 0.3;
+}
+.buyTicketPageTimesContainer > h4:nth-child(2) {
+  top: 75px;
+  left: 80px;
+  opacity: 0.5;
+}
+.buyTicketPageTimesContainer > h4:nth-child(3) {
+  top: 45px;
+  left: 140px;
+}
+.buyTicketPageTimesContainer > h4:nth-child(4) {
+  top: 75px;
+  left: 200px;
+  opacity: 0.5;
+}
+.buyTicketPageTimesContainer > h4:nth-child(5) {
+  top: 100px;
+  left: 260px;
+  opacity: 0.3;
+}
+.calendarTopBottomContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.calendarTopBottom {
+  width: 30px;
+  height: 30px;
+  background-color: #2c2c2b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.calendarBodyContainer {
+  display: grid;
+  grid-row: auto;
+  place-items: center;
+  row-gap: 10px;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  margin-bottom: 10px;
+}
+.calendarBody {
+  width: 30px;
+  height: 30px;
+  background-color: #2c2c2b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.calendarBody:nth-child(15) {
+  background-color: #ffffff;
+}
+.calendarBody:nth-child(16) {
+  background-color: #ffffff;
+}
+.calendarBody:nth-child(23) {
+  background-color: #ffffff;
+}
+.calendarBody:nth-child(26) {
+  background-color: #ffffff;
+}
+.calendarBody:nth-child(27) {
+  background-color: #ffffff;
+}
+.calendarBody:nth-child(28) {
+  background-color: #ffffff;
+}
+.calendarBody:nth-child(5) {
+  background-color: #ffffff;
+}
+.calendarBody:nth-child(10) {
+  background-color: #fdd637;
+}
+.calendarBody:nth-child(36) {
+  background-color: #fdd637;
+}
+.calendarStatusSignContainer {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.calendarStatusSignContainer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.calendarStatusSignContainer > div > h4 {
+  font-size: 16px;
+  color: #ffffff;
+}
+.calendarStatusSignContainer > div > div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.calendarStatusSignContainer > div:nth-child(1) > div {
+  background-color: #2c2c2b;
+}
+.calendarStatusSignContainer > div:nth-child(2) > div {
+  background-color: #ffffff;
+}
+.calendarStatusSignContainer > div:nth-child(3) > div {
+  background-color: #fdd637;
+}
+
+

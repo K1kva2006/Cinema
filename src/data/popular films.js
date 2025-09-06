@@ -4,6 +4,7 @@ const popularFilms = [
   {
     name: "Paddington",
     image: paddington,
+    trailer: "https://www.youtube.com/watch?v=NTvudSGfHRI",
     rate: "7/10",
     time: "1h 53m",
     genre: "Adventure/Comdey",
@@ -14,6 +15,7 @@ const popularFilms = [
   {
     name: "Bridge of terabithia",
     image: bridgeOfTerabithia,
+    trailer: "https://www.youtube.com/watch?v=_DSGAeeDXO0",
     rate: "5/10",
     time: "1h 45m",
     genre: "Drama/Fantasy",
